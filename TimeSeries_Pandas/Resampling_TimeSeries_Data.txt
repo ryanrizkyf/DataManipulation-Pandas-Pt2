@@ -1,0 +1,30 @@
+Pandas time series juga memiliki fungsi resampling yang dapat berguna untuk:
+
+[1] Downsampling
+
+Mengurangi baris datetime menjadi frekuensi yang lebih lambat, 
+bisa dibilang juga mengurangi rows dataset menjadi lebih sedikit
+
+Contoh: mengubah kolom datetime yang awalnya daily menjadi monthly
+
+
+[2] Upsampling
+
+Kebalikan dari downsampling, menambah baris datetime menjadi frekuensi yang lebih cepat, 
+menambah rows dataset dengan membuat kolom datetime menjadi lebih detail
+
+Contoh: mengubah kolom datetime yang awalnya daily menjadi hourly
+
+
+Dari Resampling ini, kemudian dapat menerapkan metode statistik untuk 
+transform value data yang ada (ex: mean, sum, count, etc).
+
+Tabel Resampling untuk Time Series :
+1. 'Min','T' : minute
+2. 'H' : hour
+3. 'D' : day
+4. 'B' : Business day
+5. 'W' : week
+6. 'M' : month
+7. 'Q' : quarter
+8. 'A' : year
